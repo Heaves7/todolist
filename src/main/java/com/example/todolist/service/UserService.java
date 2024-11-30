@@ -13,6 +13,13 @@ public class UserService {
 
     private Map<String, User> users = new HashMap<>();
 
+    public UserService() {
+        // Initialisation des utilisateurs
+        addUser(new User("user1", "Alice", Role.STANDARD, "company1"));
+        addUser(new User("user2", "Bob", Role.COMPANY_ADMIN, "company1"));
+        addUser(new User("user3", "Charlie", Role.SUPER_USER, null));
+    }
+
     // Méthode pour vider la map des utilisateurs
     public void clearUsers() {
         users.clear();
