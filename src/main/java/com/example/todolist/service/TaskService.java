@@ -13,6 +13,13 @@ public class TaskService {
 
     private Map<String, Task> tasks = new HashMap<>();
 
+    public TaskService() {
+        // Initialisation des tâches
+        addTask(new Task("task1", "Finish the report", "user1", "company1"));
+        addTask(new Task("task2", "Prepare the presentation", "user2", "company1"));
+        addTask(new Task("task3", "Organize the meeting", "user3", null));
+    }
+
     // Méthode pour vider la map des tâches
     public void clearTasks() {
         tasks.clear();
