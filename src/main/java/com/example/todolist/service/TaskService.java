@@ -1,5 +1,6 @@
 package com.example.todolist.service;
 
+import com.example.todolist.model.Role;
 import com.example.todolist.model.Task;
 import org.springframework.stereotype.Service;
 
