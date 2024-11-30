@@ -51,8 +51,4 @@ public class User {
     public void setCompanyId(String companyId) {
         this.companyId = companyId;
     }
-
-    public User orElse(Object o) {
-        return this;
-    }
 }
